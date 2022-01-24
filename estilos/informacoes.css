@@ -1,0 +1,98 @@
+main {
+    width: 90%;
+    margin: 102px auto;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nome {
+    font-size: 118px;
+    font-weight: bold;
+    color: white;
+}
+
+#rayssa {
+    position: relative;
+    top: -80px;
+    left: 60px;
+}
+
+.informacoes {
+    color: white;
+    font-size: 18px;
+    width: 30%;
+}
+
+.informacoes div:nth-child(2) {
+    margin-top: 20px;
+}
+
+.caixas {
+    min-width: 280px;
+    max-width: 400px;
+    border-radius: 40px 20px 40px 20px;
+    background-color: #0f2a2c;
+    opacity: 0.2;
+    transition: all 0.3s ease;
+}
+
+.caixas:hover {
+    opacity: 1;
+}
+
+.titulos {
+    background-color: white;
+    color: #0f2a2c;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    border-radius: 40px 20px 0 0;
+}
+
+.formacao p {
+    padding: 10px 30px;
+}
+
+.habilidades ul {
+    list-style: none;
+    padding: 10px 30px;
+}
+
+@media only screen and (max-width: 1130px) {
+    .nome {
+        font-size: 80px;
+    }
+
+    #rayssa {
+        top: -50px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    section {
+        flex-direction: column;
+    }
+
+    .informacoes {
+        width: max-content;
+    }
+
+    .nome {
+        width: max-content;
+        text-align: center;
+    }
+
+    #rayssa {
+        position: relative;
+        left: initial;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .nome {
+        font-size: 70px;
+    }
+}

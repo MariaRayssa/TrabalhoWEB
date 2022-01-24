@@ -1,0 +1,54 @@
+main {
+    width: 90%;
+    margin: 100px auto 120px;
+}
+
+main div {
+    margin-top: 20px;
+}
+
+.nome_atividade {
+    font-size: 2.5em;
+    color: white;
+}
+
+div ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+div ul li {
+    margin: 5px;
+    width: max-content;
+    text-align: center;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    transition: all 0.7s ease;
+}
+
+div ul li:hover {
+    /* background-color: #71DFE7; */
+    background-color: #0f2a2c;
+    box-shadow: 2px 2px 2px white;
+}
+
+div ul li:hover a {
+    color: white;
+}
+
+div ul li a {
+    display: inline-block;
+    width: 100%;
+    padding: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #0f2a2c;
+}
+
+@media only screen and (max-width: 425px) {
+    .nome_atividade {
+        font-size: 2em;
+    }
+}
